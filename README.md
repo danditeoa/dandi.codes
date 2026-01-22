@@ -1,54 +1,54 @@
 # dandi.codes
 
-Portfólio pessoal criado com Next.js, React e Tailwind CSS.
+Personal portfolio built with Next.js, React and Tailwind CSS.
 
-## 🚀 Tecnologias
+## Technologies
 
-- **Next.js 14** - Framework React
-- **TypeScript** - Tipagem estática
-- **Tailwind CSS** - Estilização
-- **React** - Biblioteca UI
+- **Next.js 14** - React Framework
+- **TypeScript** - Static typing
+- **Tailwind CSS** - Styling
+- **React** - UI Library
 
-## 📦 Instalação
+## Installation
 
 ```bash
 npm install
 ```
 
-## 🧞 Comandos
+## Commands
 
-Todos os comandos são executados na raiz do projeto, a partir de um terminal:
+All commands are run from the root of the project, from a terminal:
 
-| Comando                   | Ação                                           |
-| :------------------------ | :--------------------------------------------- |
-| `npm install`             | Instala as dependências                        |
-| `npm run dev`             | Inicia o servidor de desenvolvimento em `localhost:3000` |
-| `npm run build`           | Cria a build de produção em `./.next/`          |
-| `npm run start`           | Inicia o servidor de produção                  |
-| `npm run lint`            | Executa o linter ESLint                        |
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:3000`      |
+| `npm run build`           | Builds production site to `./.next/`             |
+| `npm run start`           | Starts production server                         |
+| `npm run lint`            | Runs ESLint                                      |
 
-## 📁 Estrutura do Projeto
+## Project Structure
 
 ```
-├── app/              # App Router do Next.js
-│   ├── layout.tsx    # Layout principal
-│   ├── page.tsx      # Página inicial
-│   └── globals.css   # Estilos globais
-├── components/       # Componentes React
-│   ├── Nav.tsx       # Navegação
-│   ├── Hero.tsx      # Seção hero
-│   ├── About.tsx     # Sobre mim
-│   ├── Projects.tsx  # Projetos
-│   ├── Skills.tsx    # Habilidades
-│   ├── Contact.tsx   # Contato
-│   └── Footer.tsx    # Rodapé
-└── public/          # Arquivos estáticos
+├── app/              # Next.js App Router
+│   ├── layout.tsx    # Main layout
+│   ├── page.tsx      # Home page
+│   └── globals.css   # Global styles
+├── components/       # React components
+│   ├── About/        # About section
+│   ├── Contact/      # Contact section
+│   ├── Footer/        # Footer component
+│   ├── Hero/         # Hero section
+│   ├── Nav/          # Navigation
+│   ├── Projects/     # Projects section
+│   └── Skills/       # Skills section
+└── public/          # Static files
 ```
 
-## 🎨 Personalização
+## Customization
 
-Edite os componentes em `components/` para personalizar o conteúdo do portfólio:
-- Adicione seus projetos em `Projects.tsx`
-- Atualize suas habilidades em `Skills.tsx`
-- Modifique as informações de contato em `Contact.tsx`
-- Ajuste as cores e estilos no `globals.css` e nos componentes
+Edit the components in `components/` to customize the portfolio content:
+- Add your projects in `Projects/Projects.tsx`
+- Update your skills in `Skills/Skills.tsx`
+- Modify contact information in `Contact/Contact.tsx`
+- Adjust colors and styles in `globals.css` and components
