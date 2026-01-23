@@ -14,12 +14,12 @@ export default function About() {
       </div>
       <div className="absolute inset-0 bg-[#111111]/90"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" style={{ width: '100%', maxWidth: '1280px', marginLeft: 'auto', marginRight: 'auto' }}>
         <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-indigo-500 to-indigo-400 bg-clip-text text-transparent" style={{ marginBottom: '16px' }}>
           About Me
         </h2>
-        <div className="flex justify-center">
-          <div className="w-full max-w-5xl">
+        <div className="flex justify-center" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <div className="w-full max-w-5xl" style={{ width: '100%', maxWidth: '896px', margin: '0 auto' }}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-items-center">
               <div className="relative w-full max-w-md">
                 <div className="relative w-full aspect-square mx-auto rounded-2xl overflow-hidden border-2 border-indigo-500/20 shadow-2xl">

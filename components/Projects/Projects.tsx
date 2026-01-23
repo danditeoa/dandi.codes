@@ -64,11 +64,11 @@ export default function Projects({ projects = defaultProjects }: ProjectsProps) 
       </div>
       <div className="absolute inset-0 bg-[#0a0a0a]/95"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" style={{ width: '100%', maxWidth: '1280px', marginLeft: 'auto', marginRight: 'auto' }}>
         <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-indigo-500 to-indigo-400 bg-clip-text text-transparent" style={{ marginBottom: '16px' }}>
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style={{ width: '100%', display: 'grid' }}>
           {projects.map((project, index) => (
             <div
               key={index}
@@ -84,7 +84,7 @@ export default function Projects({ projects = defaultProjects }: ProjectsProps) 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-transparent to-transparent"></div>
               </div>
-              <div className="p-6">
+              <div className="p-6" style={{ paddingLeft: '20px', paddingRight: '20px' }}>
                 <h3 className="text-2xl font-semibold mb-3 text-white">
                   {project.title}
                 </h3>

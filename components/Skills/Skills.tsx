@@ -29,11 +29,11 @@ export default function Skills({ skills = defaultSkills }: SkillsProps) {
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-purple-500/5"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" style={{ width: '100%', maxWidth: '1280px', marginLeft: 'auto', marginRight: 'auto' }}>
         <h2 className="text-4xl sm:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-indigo-500 to-indigo-400 bg-clip-text text-transparent" style={{ marginBottom: '16px' }}>
           Skills
         </h2>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4" style={{ width: '100%', display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
           {skills.map((skill, index) => (
             <div
               key={index}

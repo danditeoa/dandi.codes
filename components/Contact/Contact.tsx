@@ -39,17 +39,17 @@ export default function Contact({ links = defaultLinks }: ContactProps) {
         <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 via-transparent to-purple-500/10"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" style={{ width: '100%', maxWidth: '1280px', marginLeft: 'auto', marginRight: 'auto' }}>
         <h2 className="text-4xl sm:text-5xl font-bold mb-20 text-center bg-gradient-to-r from-indigo-500 to-indigo-400 bg-clip-text text-transparent" style={{ marginBottom: '16px' }}>
           Get in Touch
         </h2>
-        <div className="flex justify-center">
-          <div className="w-full max-w-2xl text-center">
+        <div className="flex justify-center" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <div className="w-full max-w-2xl text-center" style={{ width: '100%', maxWidth: '672px', margin: '0 auto' }}>
             <p className="text-lg sm:text-xl text-gray-300 mb-16 leading-relaxed">
               I'm always open to new opportunities and interesting projects.
               Let's talk!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center" style={{ marginTop: '20px' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center" style={{ marginTop: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               {links.map((link, index) => (
                 <a
                   key={index}
