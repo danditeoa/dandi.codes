@@ -21,7 +21,7 @@ const defaultProjects: Project[] = [
     description: 'Women Techmakers is a global initiative, previously from Google (now with new partnerships like Technovation), focused on empowering women in technology. The program promotes diversity, visibility, community, and resources, organizing technical events, mentorships, and initiatives (like She Builds AI) to support women\'s careers. I participate and organize technology events as part of this community.',
     tech: ['React', 'Tailwind CSS', 'TypeScript'],
     image: '/assets/wtm.jpeg',
-    link: 'https://app.advocu.com/members/696117e29b75bd382db13b3e',
+    link: 'https://www.technovation.org/women-techmakers/',
   },
   {
     title: 'E-commerce Platforms',
