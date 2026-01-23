@@ -7,7 +7,7 @@ const defaultProjects: Project[] = [
     description: 'Interactive platform to explore a Pokemon list or test the Pokémon in a card battle! Access detailed information about a Pokémon or test its abilities in super trump style battles, where the average skills score determines the winner. Features Pokémon exploration with details including image, name, abilities, and descriptions, plus a search bar to manually select Pokémon for battle.',
     tech: ['Next.js', 'Axios', 'Jest', 'TypeScript'],
     image: '/assets/pokemon-app.png',
-    link: 'https://pokemons-odzy.vercel.app/',
+    link: 'https://pokemons-rho-one.vercel.app/',
   },
   {
     title: 'Marvel Project',
@@ -105,7 +105,7 @@ export default function Projects({ projects = defaultProjects }: ProjectsProps) 
                   href={project.link}
                   target={project.link.startsWith('http') ? '_blank' : undefined}
                   rel={project.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center gap-2 group/link text-sm"
+                  className="text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center gap-2 group/link text-sm transition-colors"
                 >
                   View project{' '}
                   <span className="group-hover/link:translate-x-1 transition-transform inline-block">
