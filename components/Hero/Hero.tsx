@@ -42,16 +42,18 @@ export default function Hero() {
           <p className="text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
             Building scalable, performant web applications with modern technologies and a focus on accessibility and inclusive design.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
+          <div className="flex gap-4 justify-center flex-wrap" style={{ marginTop: '16px' }}>
             <a
               href="#projects"
               className="px-8 py-4 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-500 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-indigo-500/30"
+              style={{ padding: '12px 32px' }}
             >
               View Projects
             </a>
             <a
               href="#contact"
               className="px-8 py-4 border-2 border-indigo-600 text-indigo-400 rounded-lg font-semibold hover:bg-indigo-600 hover:text-white transition-all hover:-translate-y-0.5"
+              style={{ padding: '12px 32px' }}
             >
               Get in Touch
             </a>
