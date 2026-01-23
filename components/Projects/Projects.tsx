@@ -24,23 +24,23 @@ const defaultProjects: Project[] = [
     link: 'https://app.advocu.com/members/696117e29b75bd382db13b3e',
   },
   {
-    title: 'Stock Project 1',
-    description: 'Modern web application with responsive design and advanced features.',
-    tech: ['Next.js', 'TypeScript', 'Prisma'],
+    title: 'E-commerce Platforms',
+    description: 'Developed and maintained large-scale e-commerce platforms for major brands. Migrated legacy systems to modern React/Next.js stack, improving Core Web Vitals and SEO rankings. Integrated monitoring tools, refactored legacy code for better performance and maintainability, and implemented omnichannel features. Collaborated on team growth through hiring and onboarding processes.',
+    tech: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Sentry', 'Track.js'],
     image: '/assets/stock-1.jpg',
-    link: '#',
+    link: 'https://amaro.com/',
   },
   {
-    title: 'Stock Project 2',
-    description: 'Elegant and intuitive interface focused on usability.',
-    tech: ['React', 'Next.js'],
+    title: 'Lucy Software',
+    description: 'Built a web platform for invoice automation targeting the European market, improving UX and compliance standards. Developed responsive, accessible UIs with Vue.js and TypeScript. Migrated Node.js (16 → 22) and Vue Webpack CLI to Vite, boosting stability and future-proofing the application.',
+    tech: ['Vue.js', 'TypeScript', 'Node.js', 'Vite', 'Webpack'],
     image: '/assets/stock-2.jpg',
-    link: '#',
+    link: 'https://www.lucysoftware.eu/',
   },
   {
-    title: 'Stock Project 3',
-    description: 'Complete solution with integrated backend and frontend.',
-    tech: ['Next.js', 'TypeScript'],
+    title: 'Design Systems & Component Libraries',
+    description: 'Developed design system components and reusable UI libraries following atomic design principles. Built payment flows, created comprehensive documentation, and implemented E2E testing strategies. Worked on design system modules for major clients, ensuring consistency, accessibility, and maintainability across large-scale applications.',
+    tech: ['React', 'Vue.js', 'Material UI', 'TypeScript', 'Jest', 'Cypress', 'Atomic Design'],
     image: '/assets/stock-3.jpg',
     link: '#',
   },
@@ -101,17 +101,24 @@ export default function Projects({ projects = defaultProjects }: ProjectsProps) 
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  target={project.link.startsWith('http') ? '_blank' : undefined}
-                  rel={project.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center gap-2 group/link text-sm transition-colors"
-                >
-                  View project{' '}
-                  <span className="group-hover/link:translate-x-1 transition-transform inline-block">
-                    →
+                {project.link !== '#' ? (
+                  <a
+                    href={project.link}
+                    target={project.link.startsWith('http') ? '_blank' : undefined}
+                    rel={project.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center gap-2 group/link text-sm transition-colors"
+                  >
+                    View project{' '}
+                    <span className="group-hover/link:translate-x-1 transition-transform inline-block">
+                      →
+                    </span>
+                  </a>
+                ) : (
+                  <span className="text-gray-500 font-medium inline-flex items-center gap-2 text-sm">
+                    View project{' '}
+                    <span className="inline-block">→</span>
                   </span>
-                </a>
+                )}
               </div>
             </div>
           ))}
