@@ -34,13 +34,13 @@ const getButtonClasses = (variant: 'primary' | 'secondary') => {
 
 export default function Contact({ links = defaultLinks }: ContactProps) {
   return (
-    <section id="contact" className="py-40 bg-[#0a0a0a] relative overflow-hidden">
+    <section id="contact" className="py-40 bg-[#0a0a0a] relative overflow-hidden" style={{ paddingTop: '20px', paddingBottom: '20px' }}>
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/10 via-transparent to-purple-500/10"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-20 text-center bg-gradient-to-r from-indigo-500 to-indigo-400 bg-clip-text text-transparent">
+        <h2 className="text-4xl sm:text-5xl font-bold mb-20 text-center bg-gradient-to-r from-indigo-500 to-indigo-400 bg-clip-text text-transparent" style={{ marginBottom: '16px' }}>
           Get in Touch
         </h2>
         <div className="flex justify-center">
@@ -49,7 +49,7 @@ export default function Contact({ links = defaultLinks }: ContactProps) {
               I'm always open to new opportunities and interesting projects.
               Let's talk!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center" style={{ marginTop: '20px' }}>
               {links.map((link, index) => (
                 <a
                   key={index}
